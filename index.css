@@ -1,0 +1,207 @@
+.searchBtn {
+    width: 150px;
+    border: 0px solid black;
+    border-radius: 30px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+.headerTitle{
+    margin: 50px;
+    padding: 0 10%;
+}
+
+.headerBtn {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 10px;
+}
+
+.header {
+    background-color: brown;
+    height: 50rem;
+    margin-bottom: 300px;
+}
+
+.headings {
+    height: 550px;
+    background:url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');
+    overflow: hidden;
+    background-size: cover;
+}
+
+.hr-heading {
+    color: #140330;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    margin: 5%;
+    --distance: -1%;
+}
+
+.card {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    box-shadow: 4px 4px 15px 2px;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 50%;
+    
+}
+
+.card:not(:first-child) {
+    margin-left: var(--distance);
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-1rem);
+}
+
+.introduction{
+    margin: 100px;
+}
+
+.overview {
+    background: url('https://static.wixstatic.com/media/0784b1_779d919b0092448bb2738b3b72032984~mv2.png/v1/fill/w_810,h_840,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0784b1_779d919b0092448bb2738b3b72032984~mv2.png');
+    background-size: cover;
+    margin: 100px 0;
+    padding: 100px;
+}
+
+.news {
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #0B3954 3%,
+            #013c42 38%,
+            #460305 68%,
+            #104104 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255/25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+
+}
+
+.content-left{
+    width: 50%;
+     background-color: #fabcbc;
+     margin:2%;
+     padding:2%;
+     border-radius:5px;
+     float: left;
+}
+
+.content-right{
+    width: 50%;
+     background-color: #ddd8d8;
+     margin:2%;
+     padding:2%;
+     border-radius:5px;
+     float:right;
+}
+
+.accordion img{
+    height: 100px;
+    width: 200px;
+
+}
+
+.job{
+    background:url('https://images.unsplash.com/photo-1486252904492-db70957113f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=955&q=80');
+    background-size: cover;
+    color: #ddd8d8;
+    margin-bottom: 100px;
+
+}
+
+.job h4{
+    margin: 5%;
+    color: #ddd8d8;
+    padding: 5%;
+}
+
+.update{
+    margin: 200px 100px;
+}
+
+.card a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer{
+    margin-top: 100px;
+}
